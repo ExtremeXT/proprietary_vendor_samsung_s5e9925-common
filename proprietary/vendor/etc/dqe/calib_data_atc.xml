@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<calib_data>
+  <version>06100000</version>
+  <mode name="tune">
+    <atc al="0">
+      <aps>0,0,0,255,255,128,10,14,1,4,2,0,100,923,128,255,16,3,3,2,3,128,1</aps>
+      <qsize>11</qsize>
+      <qcoeff>10</qcoeff>
+      <qdelay>0</qdelay>
+      <qalcoeff>0</qalcoeff>
+    </atc>
+  </mode>
+</calib_data>
