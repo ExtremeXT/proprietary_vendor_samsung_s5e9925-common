@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='utf-8'?>
+<libs lib_count="6">
+  <kernels>
+    <lib kernel_count="14" name="libnn_gc.so" target="DSP">
+      <kernel exe="Convolution" id="0" post="" pre="Convolution_pre" />
+      <kernel exe="DwConvolution" id="1" post="" pre="" />
+      <kernel exe="Deconvolution" id="2" post="" pre="" />
+      <kernel exe="DwdeConvolution" id="3" post="" pre="" />
+      <kernel exe="Eltwise" id="4" post="" pre="" />
+      <kernel exe="Pooling" id="5" post="" pre="Pooling_pre" />
+      <kernel exe="Concat" id="6" post="" pre="" />
+      <kernel exe="FullyConnected" id="7" post="" pre="" />
+      <kernel exe="ArgMaxResize_axis1" id="8" post="" pre="" />
+      <kernel exe="ArgMinResize_axis1" id="9" post="" pre="" />
+      <kernel exe="Maximum" id="10" post="" pre="" />
+      <kernel exe="Minimum" id="11" post="" pre="" />
+      <kernel exe="Absolute" id="12" post="" pre="" />
+      <kernel exe="SoftMax" id="13" post="" pre="pp_nn_softmax_i8" />
+    </lib>
+    <lib kernel_count="15" name="libann_gc.so" target="DSP">
+      <kernel exe="Absolute_ANN" id="0" post="" pre="" />
+      <kernel exe="Maximum_ANN" id="1" post="" pre="" />
+      <kernel exe="Minimum_ANN" id="2" post="" pre="" />
+      <kernel exe="Rsqrt_ANN" id="3" post="" pre="" />
+      <kernel exe="Reduce_mean_ANN" id="4" post="" pre="" />
+      <kernel exe="Square_difference_ANN" id="5" post="" pre="" />
+      <kernel exe="Select_ANN" id="6" post="" pre="" />
+      <kernel exe="SoftMax_ANN" id="7" post="" pre="pp_nn_softmax_i8" />
+      <kernel exe="ResizeBilinear_ANN" id="8" post="" pre="" />
+      <kernel exe="Dt_cvt_ann" id="9" post="" pre="pp_nn_dt_cvt_ann" />
+      <kernel exe="DepthToSpace_ANN" id="10" post="" pre="DepthToSpace_ANN_preproc" />
+      <kernel exe="Gather_ANN" id="11" post="" pre="Gather_ANN_preproc" />
+      <kernel exe="Pad_ANN" id="12" post="" pre="Pad_ANN_preproc" />
+      <kernel exe="Concat_ANN" id="13" post="" pre="Concat_ANN_preproc" />
+      <kernel exe="Convolution_ANN" id="14" post="" pre="Convolution_ANN_preproc" />
+    </lib>
+    <lib kernel_count="32" name="libnn_af16wf16_gc.so" target="DSP">
+      <kernel exe="DetectionOutput_conf_filter_af16wf16" id="0" post="" pre="" />
+      <kernel exe="DetectionOutput_decode_box_af16wf16" id="1" post="" pre="" />
+      <kernel exe="DetectionOutput_apply_nms_sort_af16wf16" id="2" post="" pre="" />
+      <kernel exe="ArgMax_af16wf16" id="3" post="" pre="" />
+      <kernel exe="SpaceToDepth_af16wf16" id="4" post="" pre="SpaceToDepth_af16wf16_preproc" />
+      <kernel exe="Absolute_af16wf16" id="5" post="" pre="" />
+      <kernel exe="FullyConnected_af16wf16" id="6" post="" pre="FullyConnected_af16wf16_preproc" />
+      <kernel exe="Eltwise_af16wf16" id="7" post="" pre="Eltwise_af16wf16_preproc" />
+      <kernel exe="OneHot_af16wf16" id="8" post="" pre="OneHot_af16wf16_preproc" />
+      <kernel exe="Pooling_af16wf16" id="9" post="" pre="Pooling_af16wf16_preproc" />
+      <kernel exe="Exp_af16wf16" id="10" post="" pre="Exp_af16wf16_preproc" />
+      <kernel exe="Gather_af16wf16" id="11" post="" pre="Gather_af16wf16_preproc" />
+      <kernel exe="SoftMax_af16wf16" id="12" post="" pre="pp_nn_softmax_af16wf16" />
+      <kernel exe="Tanh_af16wf16" id="13" post="" pre="pp_nn_tanh_af16wf16" />
+      <kernel exe="Sigmoid_af16wf16" id="14" post="" pre="pp_nn_sigmoid_af16wf16" />
+      <kernel exe="Lstm_3_af16wf16" id="15" post="" pre="Lstm_3_af16wf16_preproc" />
+      <kernel exe="EltwiseExpMul_af16wf16" id="16" post="" pre="" />
+      <kernel exe="OneHotFullyConnected_af16wf16" id="17" post="" pre="OneHotFullyConnected_af16wf16_preproc" />
+      <kernel exe="Transpose_af16wf16" id="18" post="" pre="" />
+      <kernel exe="Concat_af16wf16" id="19" post="" pre="" />
+      <kernel exe="Rsqrt_af16wf16" id="20" post="" pre="" />
+      <kernel exe="Reduce_mean_af16wf16" id="21" post="" pre="" />
+      <kernel exe="Reduce_max_af16wf16" id="22" post="" pre="" />
+      <kernel exe="Square_difference_af16wf16" id="23" post="" pre="" />
+      <kernel exe="Maximum_af16wf16" id="24" post="" pre="" />
+      <kernel exe="Minimum_af16wf16" id="25" post="" pre="" />
+      <kernel exe="Dt_cvt_af16wf16" id="26" post="" pre="pp_nn_dt_cvt_af16wf16" />
+      <kernel exe="DepthToSpace_af16wf16" id="27" post="" pre="DepthToSpace_af16wf16_preproc" />
+      <kernel exe="Convolution_af16wf16" id="28" post="" pre="Convolution_af16wf16_preproc" />
+      <kernel exe="Resize_bilinear_af16wf16" id="29" post="" pre="" />
+      <kernel exe="DynamicFullyConnected_af16wf16" id="30" post="DynamicFullyConnected_af16wf16_postproc" pre="DynamicFullyConnected_af16wf16_preproc" />
+      <kernel exe="Reduce_mean_h_w_af16wf16" id="31" post="" pre="" />
+    </lib>
+    <lib kernel_count="22" name="libnn_sdma_gc.so" target="DMA">
+      <kernel exe="Slice" id="0" post="" pre="" />
+      <kernel exe="Permute" id="1" post="" pre="" />
+      <kernel exe="DataFormat" id="2" post="" pre="DataFormat_pre" />
+      <kernel exe="Reshape" id="3" post="" pre="" />
+      <kernel exe="Flatten" id="4" post="" pre="" />
+      <kernel exe="SSD_Permute_Flatten" id="5" post="" pre="" />
+      <kernel exe="Quant" id="6" post="" pre="" />
+      <kernel exe="Dequant" id="7" post="" pre="" />
+      <kernel exe="Flatten_af16wf16" id="8" post="" pre="" />
+      <kernel exe="Pack" id="9" post="" pre="" />
+      <kernel exe="Unpack" id="10" post="" pre="" />
+      <kernel exe="StridedSlice" id="11" post="" pre="" />
+      <kernel exe="Split" id="12" post="" pre="" />
+      <kernel exe="Copy" id="13" post="" pre="" />
+      <kernel exe="Slice_af16wf16" id="14" post="" pre="" />
+      <kernel exe="Permute_af16wf16" id="15" post="" pre="" />
+      <kernel exe="Pack_af16wf16" id="16" post="" pre="" />
+      <kernel exe="Unpack_af16wf16" id="17" post="" pre="" />
+      <kernel exe="StridedSlice_af16wf16" id="18" post="" pre="" />
+      <kernel exe="Split_af16wf16" id="19" post="" pre="" />
+      <kernel exe="Copy_af16wf16" id="20" post="" pre="" />
+      <kernel exe="DataFormat_af16wf16" id="21" post="" pre="" />
+    </lib>
+    <lib kernel_count="1" name="libgaussian3x3_gc.so" target="DSP">
+      <kernel exe="gaussian3x3" id="0" post="" pre="" />
+    </lib>
+    <lib kernel_count="7" name="libme_rta_pamir_gc.so" target="DSP">
+      <kernel exe="me_rta_gm" id="0" post="postproc_me_rta_gm" pre="preproc_me_rta_gm" />
+      <kernel exe="me_rta_fm" id="1" post="postproc_me_rta_fm" pre="preproc_me_rta_fm" />
+      <kernel exe="me_rta_fl" id="2" post="" pre="preproc_me_rta_fl" />
+      <kernel exe="me_rta_seg" id="3" post="" pre="preproc_me_rta_seg" />
+      <kernel exe="me_rta_seg_post" id="4" post="" pre="preproc_me_rta_seg_post" />
+      <kernel exe="me_rta_calc_mecfd" id="5" post="" pre="preproc_me_rta_calc_mecfd" />
+      <kernel exe="me_rta_post_processing" id="6" post="" pre="" />
+    </lib>
+  </kernels>
+</libs>
